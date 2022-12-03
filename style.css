@@ -6,7 +6,8 @@ body{
 }
 
 img{
-    max-width: 200px;
+    width: 206px;
+    height: 206px;;
     margin: 15px 25px;
     border: 3px black solid;
     border-radius: 5px;
@@ -20,6 +21,7 @@ img{
 }
 
 button{
+    background-color: #fcd2f0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
     font-weight: 600;
@@ -33,7 +35,48 @@ button{
     transition: .3s;
 }
 
+#res{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 button:hover{
     color: white;
     background-color: #A9C9FF;
+}
+
+@media (max-width: 820px) {
+    img{
+        width: 156px;
+        height: 156px;
+    }
+
+    #botones{
+        gap: 50px;
+    }
+
+    #res{
+        margin: 0 150px;
+    }
+    
+}
+
+@media (max-width: 570px) {
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    #botones{
+        gap: 30px;
+    }
+
+    #res{
+        margin: 0 50px;
+    }
+    
 }
